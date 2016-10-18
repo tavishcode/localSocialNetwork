@@ -1,16 +1,3 @@
-/*
- * main.cpp
- *  Update: 11:37am 24/4/2016
- *  Fixed bugs:
- *      Interaction mode reply function enabled; an additional 
- *            cin.ignore() is added
- *      Interaction mode one may reply his own thread;
- *      Test case delete function fixed.
-
- *  Created on: Mar 24, 2016
- *      Author: kevinw
- */
-
 #include <iostream>
 #include "structure.h"
 
@@ -466,7 +453,7 @@ int main() {
     return 0;
 }
 
-//a given function, that print the details of a list_person.
+//print the details of a list_person.
 void list_person(Person* p) {
     if (p == NULL)
         return;
@@ -475,8 +462,7 @@ void list_person(Person* p) {
 }
 
 
-//a given function, that print a post and its follow-up post. This function would call
-//a function count_followup that is required in the assignment.
+//print a post and its follow-up post
 void print_post(const Post* p) {
     if (p == NULL)
         return;
